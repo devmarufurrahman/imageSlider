@@ -8,45 +8,14 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <ViewFlipper
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:flipInterval="3000"
-        android:autoStart="true"
-        android:inAnimation="@android:anim/slide_in_left"
-        android:outAnimation="@android:anim/slide_out_right"
-        >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/image1"
-            />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/image2"
-            />
-
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="@drawable/image3"-->
-<!--            />-->
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/image4"
-            />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/image5"
-            />
-
-    </ViewFlipper>
+    <com.denzcoskun.imageslider.ImageSlider
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="1000"
+        app:iss_period="1000"
+        app:iss_text_align="CENTER"
+        android:id="@+id/imgSlider"
+        />
 
 </LinearLayout>
